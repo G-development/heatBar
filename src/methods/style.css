@@ -1,0 +1,91 @@
+/* #flagsContainer image{
+    transform: scale(1.5);
+} */
+
+#flagsContainer > foreignObject > img {
+  cursor: pointer;
+}
+
+#flagsContainer > foreignObject > img#dotted {
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+.hb-tooltip-single {
+  position: absolute;
+  padding: 3px;
+  z-index: 1;
+  pointer-events: none;
+
+  text-align: center;
+
+  /* Glassmorphism */
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.hb-tooltip-single p:first-child {
+  font-weight: bold;
+}
+
+.hb-tooltip {
+  position: absolute;
+  display: inline-grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 5px;
+  padding: 3px;
+  z-index: 1;
+
+  /* Glassmorphism */
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.hb-tooltip::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+.hb-tooltip::-webkit-scrollbar-track {
+  background: transparent;
+}
+.hb-tooltip::-webkit-scrollbar-thumb {
+  background: darkgray;
+  border-radius: 2px;
+}
+.hb-tooltip::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.hb-tooltip-group {
+  /* width: 30px; */
+  /* max-width: 50px; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2px;
+}
+
+.hb-tooltip-group p:first-child {
+  word-wrap: break-word;
+  white-space: pre-line;
+  font-weight: bold;
+}
+
+.hb-tooltip-group img {
+  width: 40px;
+  cursor: pointer;
+  margin: 2px 0;
+  border-radius: 4px;
+}

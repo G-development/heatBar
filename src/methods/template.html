@@ -1,0 +1,23 @@
+<style>
+  {{layout.heatBar.cssTextArea}}
+
+  .hb-tooltip.{{elementId}}{
+    max-height: {{setHeight}}px;
+    overflow-y: scroll;
+  }
+
+  .hb-tooltip-group img{
+    width : {{layout.heatBar.tooltipImgWidth}}
+  }
+
+  #flagsContainer > foreignObject > img {
+    aspect-ratio: {{ layout.heatBar.flagsInCircle ? 1/1 : 4/3 }}
+  }  
+</style>
+
+<div
+  id="heatBar_{{layout.qInfo.qId}}"
+  style="display: flex; justify-content: center"
+>
+  qExt Template
+</div>
